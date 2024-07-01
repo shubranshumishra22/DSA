@@ -5,6 +5,7 @@ int BinarySearch(int arr[], int n, int key){
     //start, end anf mid
     int start=0, end= n-1, mid;
 
+while(start<=end){
     //find mid
     mid=(start+end)/2;
 
@@ -14,12 +15,14 @@ int BinarySearch(int arr[], int n, int key){
     }
 
     //arr[mid]<key
-    else if(start=mid+1);
+    else if(arr[mid]<key)
+    start=mid+1;
 
     //arr[mid]>key
     else(end=mid-1);
 
     return -1;  //for element not present
+}
 }
 
 
